@@ -8,10 +8,10 @@ int main()
   
   char option;
   cout << "Menu Konverter Berat:" << endl;
-  cout << "1. Kilogram to (Ons-Pons-gram)." << endl;
-  cout << "2. Ons      to (Kilogram-Pons-gram)." << endl;
-  cout << "3. Pons     to (Kilogram-Ons-gram)." << endl;
-  cout << "4. gram     to (Kilogram-Ons-Pons)." << endl;
+  cout << "1. Kilogram ke (Ons-Pons-gram)." << endl;
+  cout << "2. Ons      ke (Kilogram-Pons-gram)." << endl;
+  cout << "3. Pons     ke (Kilogram-Ons-gram)." << endl;
+  cout << "4. gram     ke (Kilogram-Ons-Pons)." << endl;
   cout << "Masukkan Pilihan Anda: ";
   cin >> option;
   
@@ -68,7 +68,7 @@ int main()
       cout << "\n" << grm << " gram = " << pons << " Pons";
    }
    else
-      cout << "Inputan salah." << endl;
+      cout << "Input salah." << endl;
 
    return 0;
 }
