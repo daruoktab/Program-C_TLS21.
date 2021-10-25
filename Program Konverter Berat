@@ -1,0 +1,74 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    
+  float kilo, ons, pons, grm;
+  
+  char option;
+  cout << "Menu Konverter Berat:" << endl;
+  cout << "1. Kilogram to (Ons-Pons-gram)." << endl;
+  cout << "2. Ons      to (Kilogram-Pons-gram)." << endl;
+  cout << "3. Pons     to (Kilogram-Ons-gram)." << endl;
+  cout << "4. gram     to (Kilogram-Ons-Pons)." << endl;
+  cout << "Masukkan Pilihan Anda: ";
+  cin >> option;
+  
+  if (option == '1')
+   {
+      cout << "\nMasukan Berat Kilogram: ";
+      cin >> kilo;
+
+      ons  = kilo*10;
+      pons = kilo*2;
+      grm = kilo*1000;
+      
+      cout << "\n" << kilo << " Kilogram = " << ons << " Ons";
+      cout << "\n" << kilo << " Kilogram = " << pons << " Pons";
+      cout << "\n" << kilo << " Kilogram = " << grm << " gram";
+   }
+   else if (option == '2')
+   {
+      cout << "\nMasukan Berat Ons: ";
+      cin >> ons;
+
+      kilo = ons/10;
+      pons = ons/5;
+      grm  = ons*100;
+      
+      cout << "\n" << ons << " Ons = " << kilo << " Kilogram";
+      cout << "\n" << ons << " Ons = " << pons << " Pons";
+      cout << "\n" << ons << " Ons = " << grm << " gram";
+   }
+   else if (option == '3')
+   {
+      cout << "\nMasukan Berat Pons: ";
+      cin >> pons;
+
+      kilo = pons/2;
+      ons  = pons*5;
+      grm  = pons*500;
+      
+      cout << "\n" << pons << " Pons = " << kilo << " Kilogram";
+      cout << "\n" << pons << " Pons = " << ons << " Ons";
+      cout << "\n" << pons << " Pons = " << grm << " gram";
+   }
+   else if (option == '4')
+   {
+      cout << "\nMasukan Berat gram: ";
+      cin >> grm;
+
+      kilo = grm/1000;
+      ons  = grm/100;
+      pons = grm/500;
+      
+      cout << "\n" << grm << " gram = " << kilo << " Kilogram";
+      cout << "\n" << grm << " gram = " << ons << " Ons";
+      cout << "\n" << grm << " gram = " << pons << " Pons";
+   }
+   else
+      cout << "Inputan salah." << endl;
+
+   return 0;
+}
